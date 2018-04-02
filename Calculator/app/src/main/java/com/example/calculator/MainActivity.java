@@ -7,6 +7,9 @@ package com.example.calculator;
         import android.view.View;
         import android.widget.Button;
         import android.widget.EditText;
+        import android.view.Menu;
+        import android.view.MenuItem;
+        import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     /**
@@ -81,7 +84,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initEvent();
 
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+    }
 
+    //定义菜单响应事件
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.help_item:
+                Toast.makeText(this,"这是帮助",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.remove_item:
+                this.finish();System.exit(0);
+                break;
+            default:
+        }
+        return true;
+    }
     /**
      * 初始化控件
      */
