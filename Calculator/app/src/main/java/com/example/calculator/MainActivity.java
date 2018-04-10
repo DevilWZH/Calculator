@@ -1,6 +1,8 @@
 package com.example.calculator;
 
 
+        import android.content.Intent;
+        import android.net.Uri;
         import android.os.Bundle;
         import android.support.v7.app.AppCompatActivity;
         import android.util.Log;
@@ -94,8 +96,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
+            case R.id.danwei_item:
+                Intent intent = new Intent(MainActivity.this , Change.class);
+                startActivity(intent);
+                break;
             case R.id.help_item:
                 Toast.makeText(this,"这是帮助",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.fuza_item:
+                Intent intent3 = new Intent(MainActivity.this , fuza.class);
+                startActivity(intent3);
                 break;
             case R.id.remove_item:
                 this.finish();System.exit(0);
@@ -130,10 +140,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         divide_btn = (Button) findViewById(R.id.divide_btn);
         equal_btn = (Button) findViewById(R.id.equal_btn);
 
-        sin = (Button) findViewById(R.id.sin);
-        cos = (Button) findViewById(R.id.cos);
-        fang = (Button) findViewById(R.id.x);
-        gen = (Button) findViewById(R.id.gen);
 
         /**
          * 其他
@@ -176,10 +182,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         divide_btn.setOnClickListener(this);
         equal_btn.setOnClickListener(this);
 
-        sin.setOnClickListener(this);
-        cos.setOnClickListener(this);
-        fang.setOnClickListener(this);
-        gen.setOnClickListener(this);
 
         dot_btn.setOnClickListener(this);
         percent_btn.setOnClickListener(this);
@@ -843,6 +845,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          */
         noStartWithOperator = !existedText.startsWith("-") && ( existedText.contains("+") ||
                 existedText.contains("-") || existedText.contains("×") || existedText.contains("÷"));
+    }
+    public void onFragmentInteraction(Uri uri) {
+
     }
 
 }

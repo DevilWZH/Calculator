@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#000000"
     >
 
     <EditText
@@ -14,7 +13,6 @@
         android:layout_gravity="end"
         android:textAlignment="textEnd"
         android:singleLine="false"
-        android:textColor="#ffffff"
         android:background="@null"
         />
 
@@ -57,42 +55,42 @@
                 android:text="÷"
                 android:textSize="22sp" />
         </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
 
-            <Button
-                android:id="@+id/sin"
-                android:layout_width="0dp"
-                android:layout_height="70dp"
-                android:layout_weight="1"
-                android:text="sin"
-                android:textSize="22sp" />
+            <!--<Button-->
+                <!--android:id="@+id/sin"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="sin"-->
+                <!--android:textSize="22sp" />-->
 
-            <Button
-                android:id="@+id/cos"
-                android:layout_width="0dp"
-                android:layout_height="70dp"
-                android:layout_weight="1"
-                android:text="cos"
-                android:textSize="22sp" />
+            <!--<Button-->
+                <!--android:id="@+id/cos"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="cos"-->
+                <!--android:textSize="22sp" />-->
 
-            <Button
-                android:id="@+id/x"
-                android:layout_width="0dp"
-                android:layout_height="70dp"
-                android:layout_weight="1"
-                android:text="x²"
-                android:textSize="22sp" />
+            <!--<Button-->
+                <!--android:id="@+id/x"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="x²"-->
+                <!--android:textSize="22sp" />-->
 
-            <Button
-                android:id="@+id/gen"
-                android:layout_width="0dp"
-                android:layout_height="70dp"
-                android:layout_weight="1"
-                android:text="½"
-                android:textSize="22sp" />
-        </TableRow>
+            <!--<Button-->
+                <!--android:id="@+id/gen"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="½"-->
+                <!--android:textSize="22sp" />-->
+        <!--</TableRow>-->
 
         <TableRow
             android:layout_width="match_parent"
@@ -146,7 +144,7 @@
             <Button
                 android:id="@+id/num_five"
                 android:layout_width="0dp"
-                android:layout_height="70dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="5"
                 android:textSize="22sp" />

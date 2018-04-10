@@ -16,6 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+    <activity android:name=".Change">
+        <intent-filter>
+            <action android:name="android.intent.action.CHANGE" />
+        </intent-filter>
+
+        </activity>
+        <activity android:name=".fuza">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
